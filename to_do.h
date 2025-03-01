@@ -18,7 +18,6 @@ public:
     ~TO_DO();
 
 private slots:
-    void on_Clear_clicked();
 
     void on_Remove_clicked();
 
@@ -29,6 +28,8 @@ private slots:
     void on_Removall_clicked();
 
     void on_Add_clicked();
+
+//    void on_Task_cursorPositionChanged(int arg1, int arg2);
 
 private:
     Ui::TO_DO *ui;

@@ -41,19 +41,8 @@
         <property name="placeholderText">
          <string>What do you want to do today buddy ?</string>
         </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="Clear">
-        <property name="font">
-         <font>
-          <family>Ubuntu Mono derivative Powerline</family>
-          <pointsize>15</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>Clear</string>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
         </property>
        </widget>
       </item>
@@ -74,7 +63,30 @@
      </layout>
     </item>
     <item>
-     <widget class="QListWidget" name="My_tasks"/>
+     <widget class="QListWidget" name="list_tasks">
+      <property name="focusPolicy">
+       <enum>Qt::FocusPolicy::StrongFocus</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCalendarWidget" name="calendarWidget">
+      <property name="minimumSize">
+       <size>
+        <width>782</width>
+        <height>381</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1324</width>
+        <height>1235</height>
+       </size>
+      </property>
+      <property name="gridVisible">
+       <bool>true</bool>
+      </property>
+     </widget>
     </item>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3"/>
